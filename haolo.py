@@ -3,7 +3,7 @@ import sys
 from mcstatus import JavaServer
 
 TIMEOUT = 2.0  # Thời gian chờ phản hồi từ server (giây)
-CONCURRENCY = 300  # Số lượng IP xử lý cùng lúc
+CONCURRENCY = 30000  # Số lượng IP xử lý cùng lúc
 semaphore = asyncio.Semaphore(CONCURRENCY)
 
 
